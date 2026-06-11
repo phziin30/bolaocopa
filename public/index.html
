@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolão da Copa</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; text-align: center; }
+        .match-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 400px; margin: 10px auto; }
+        .score { font-size: 24px; font-weight: bold; color: #d32f2f; }
+        .inputs { margin: 15px 0; }
+        input[type="number"] { width: 50px; text-align: center; font-size: 18px; }
+        button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+
+    <h1>🏆 Bolão da Copa</h1>
+    <div id="status-conexao">Conectando ao servidor ao vivo...</div>
+    
+    <div id="lista-jogos">
+        <!-- Os jogos serão injetados aqui via JavaScript -->
+    </div>
+
+    <!-- Biblioteca Cliente do Socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
